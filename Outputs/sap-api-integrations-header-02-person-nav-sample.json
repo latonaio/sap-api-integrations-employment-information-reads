@@ -1,0 +1,20 @@
+{
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-employment-infomation-reads/SAP_API_Caller/caller.go#L60",
+	"function": "sap-api-integrations-employment-information-reads/SAP_API_Caller.(*SAPAPICaller).Header",
+	"level": "INFO",
+	"message": {
+		"PersonIDExternal": "109031",
+		"LastModifiedDateTime": "/Date(1442368439000+0000)/",
+		"LastModifiedBy": "admindlr",
+		"CreatedDateTime": "/Date(1442367865000+0000)/",
+		"DateOfBirth": "/Date(-501206400000)/",
+		"PerPersonUUID": "0378B0E6F41444EBB90345B56D537D3D",
+		"CreatedOn": "/Date(1442353465000)/",
+		"LastModifiedOn": "/Date(1442354039000)/",
+		"CountryOfBirth": "RUS",
+		"CreatedBy": "admindlr",
+		"PersonID": "771",
+		"PersonalInfoNav": "https://sandbox.api.sap.com:443:443/successfactors/odata/v2/PerPerson('109031')/personalInfoNav"
+	},
+	"time": "2022-01-11T09:49:21.396617+09:00"
+}
