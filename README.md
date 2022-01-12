@@ -90,49 +90,53 @@ func (c *SAPAPICaller) AsyncGetEmploymentInformation(personIDExternal string, ac
 ## Output  
 本マイクロサービスでは、[golang-logging-library](https://github.com/latonaio/golang-logging-library) により、以下のようなデータがJSON形式で出力されます。  
 以下の sample.json の例は、従業員雇用情報 の ヘッダデータ が取得された結果の JSON の例です。  
-以下の項目のうち、"CandidateID" ～ "CellPhone" は、/SAP_API_Output_Formatter/type.go 内 の Type Header {} による出力結果です。"cursor" ～ "time"は、golang-logging-library による 定型フォーマットの出力結果です。  
+以下の項目のうち、"PersonIDExternal" ～ "PersonNav" は、/SAP_API_Output_Formatter/type.go 内 の Type Header {} による出力結果です。"cursor" ～ "time"は、golang-logging-library による 定型フォーマットの出力結果です。  
 
 ```
 {
-	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-employment-information-reads/SAP_API_Caller/caller.go#L63",
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-employment-infomation-reads/SAP_API_Caller/caller.go#L53",
 	"function": "sap-api-integrations-employment-information-reads/SAP_API_Caller.(*SAPAPICaller).Header",
 	"level": "INFO",
 	"message": [
 		{
-			"CandidateID": "1283",
-			"Country": "Japan",
-			"PartnerMemberID": "",
-			"LastLoginDateTime": "/Date(1446091083000+0000)/",
-			"LastModifiedDateTime": "/Date(1446091101000+0000)/",
-			"AnonymizedDateTime": "",
-			"Anonymized": "Non-anonymized",
-			"PublicIntranet": false,
-			"UsersSysID": "",
-			"ExternalCandidate": true,
-			"PrimaryEmail": "mfukui@email.com",
-			"CreationDateTime": "/Date(1446009621000+0000)/",
-			"Zip": "5420047",
-			"HomePhone": "",
-			"FirstName": "正治",
-			"PrivacyAcceptDateTime": "",
-			"CurrentTitle": "",
-			"ConsentToMarketing": "",
-			"AgreeToPrivacyStatement": "false",
-			"DateofAvailability": "",
-			"LastName": "福井",
-			"City": "大阪",
-			"DataPrivacyID": "",
-			"VisibilityOption": false,
-			"Address": "2-4-6",
-			"CandidateLocale": "en_GB",
-			"Address2": "中央区",
-			"ContactEmail": "test@abc.com",
-			"ShareProfile": "Any company recruiter worldwide",
-			"PartnerSource": "0",
-			"MiddleName": "",
-			"CellPhone": "+81+81673748273"
+			"PersonIDExternal": "109031",
+			"UserID": "109031",
+			"LastModifiedDateTime": "/Date(1442368786000+0000)/",
+			"ServiceDate": "/Date(858556800000)/",
+			"EndDate": "",
+			"BonusPayExpirationDate": "",
+			"CreatedDateTime": "/Date(1442367865000+0000)/",
+			"IsContingentWorker": false,
+			"InitialOptionGrant": "",
+			"InitialStockGrant": "",
+			"EmployeeFirstEmployment": "",
+			"EligibleForStock": false,
+			"EligibleForSalContinuation": "",
+			"OkToRehire": "",
+			"AssignmentIDExternal": "109031",
+			"ProfessionalServiceDate": "",
+			"SalaryEndDate": "",
+			"SeniorityDate": "/Date(858556800000)/",
+			"StartDate": "/Date(858556800000)/",
+			"HiringNotCompleted": false,
+			"IsECRecord": true,
+			"PrevEmployeeID": "",
+			"RegretTermination": "",
+			"CreatedOn": "/Date(1442353465000)/",
+			"LastDateWorked": "",
+			"FirstDateWorked": "/Date(858556800000)/",
+			"OriginalStartDate": "/Date(858556800000)/",
+			"PayrollEndDate": "",
+			"BenefitsEligibilityStartDate": "/Date(858556800000)/",
+			"StockEndDate": "",
+			"BenefitsEndDate": "",
+			"AssignmentClass": "ST",
+			"LastModifiedBy": "admindlr",
+			"LastModifiedOn": "/Date(1442354386000)/",
+			"CreatedBy": "admindlr",
+			"PersonNav": "https://sandbox.api.sap.com:443/successfactors/odata/v2/EmpEmployment(personIdExternal='109031',userId='109031')/personNav"
 		}
 	],
-	"time": "2022-01-10T13:21:19.551+09:00"
+	"time": "2022-01-11T09:49:19.553754+09:00"
 }
 ```
