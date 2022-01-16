@@ -1,7 +1,7 @@
 # sap-api-integrations-employment-information-reads
 sap-api-integrations-employment-information-reads は、外部システム(特にエッジコンピューティング環境)をSAPと統合することを目的に、SAP API で 従業員雇用情報 データを取得するマイクロサービスです。    
 sap-api-integrations-employment-information-reads には、サンプルのAPI Json フォーマットが含まれています。   
-sap-api-integrations-employment-information-reads は、オンプレミス版である（＝クラウド版ではない）SAP SuccessFactors API の利用を前提としています。クラウド版APIを利用する場合は、ご注意ください。   
+sap-api-integrations-employment-information-reads は、SAP SuccessFactors API の利用を前提としています。  
 https://api.sap.com/api/ECEmploymentInformation/overview   
 
 ## 動作環境  
